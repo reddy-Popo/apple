@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import boto3
 import pandas as pd
 import numpy as np
@@ -400,4 +401,6 @@ def update_content(chart_type):
 }), styled_description
 
 if __name__ == '__main__':
-    app.run_server(debug=False, dev_tools_ui=False, dev_tools_props_check=False)
+    port = int(os.environ.get('PORT', 8050))  # 使用 PORT 环境变量，默认端口为 8050
+    app.run_server(debug=False, host='0.0.0.0', port=port)
+   
