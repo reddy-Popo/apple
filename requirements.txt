@@ -1,0 +1,13 @@
+boto3
+pandas
+numpy
+torch
+dash
+dash-bootstrap-components
+scikit-learn
+imblearn
+xgboost
+catboost
+plotly
+scipy
+gunicorn
